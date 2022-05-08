@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import Currency from './components/Currency';
+import Currency from './components/Currencies';
 
 function App() {
 
