@@ -1,15 +1,17 @@
 import './currency.css';
-import React from 'react';
+import React,  { useContext } from 'react';
+import ThemeContext from '../ThemeContext';
 
 export default function Currency({ name, value, onChange, readOnly }) {
 
+  const theme = useContext(ThemeContext);
   function onChangeHandler(event) {
     onChange(event.currentTarget.value);
   }
 
   const elementToShow = (
-    <div className='container'>
-      <label className='currency'>
+    <div className={`currency ${theme.storeTheme}`}>
+      <label className='container'>
         <strong>{name}</strong>
         <br />
         <input

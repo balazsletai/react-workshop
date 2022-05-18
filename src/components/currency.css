@@ -1,8 +1,12 @@
-input:invalid {
+.currency.dark input:invalid {
   background-color: red;
 }
 
-input[type=number] {
+.currency.light input:invalid {
+  background-color: red;
+}
+
+.currency input[type=number] {
   border: 2px solid lightsalmon;
   padding: 10px;
   margin: 20px;
@@ -10,14 +14,11 @@ input[type=number] {
   text-align: center;
 }
 
-.container {
-  border: 2px solid black;
-  width: fit-content;
-  position:relative;
-  left: 45vw;
-  top: 30vh;
+.currency.dark input {
+  background-color: black;
+  color: white;
 }
 
-.currency {
+.container {
   font-size: 1cm;
 }

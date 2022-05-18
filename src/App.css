@@ -1,6 +1,28 @@
 .App {
-    text-align: center;
-    height: 100vh;
-    background-color:bisque;
-  }
-  
+  text-align: center;
+  height: 100vh;
+}
+
+.App.dark {
+  background-color: rgb(19, 16, 16);
+  color: rgb(241, 228, 228);
+}
+
+
+.App.light {
+  background-color:rgb(248, 223, 192);
+  color: rgb(31, 18, 18)
+}
+
+.App.dark select {
+  background-color: rgb(76, 46, 46);
+  color: rgb(240, 228, 228);
+}
+
+.theme {
+    font-size: 0.7cm;
+}
+
+.theme select {
+  font-size: large;
+}
